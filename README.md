@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### **Settimana 1: Le fondamenta solide e lo scrolling**
 
-## Getting Started
+| Giorno   | 🎯 Compito del Giorno                                                                                                          | 💡 Focus  | 🛠️ Plugin/API                          | 🤝 Idea Collaborazione                                                                                          |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Giorno 1 | Creare un componente React e animare un box con `to`, `from` e `fromTo`.                                                       | Core API  | `useGSAP`, `gsap.to`                   | Uno implementa `gsap.to`, l'altro `gsap.fromTo` su due elementi diversi.                                        |
+| Giorno 2 | Creare una sequenza di animazioni coordinate su un singolo elemento usando una Timeline.                                       | Core API  | `useGSAP`, `Timeline`                  | Pair programming: uno "guida" scrivendo il codice, l'altro "naviga" suggerendo i passi.                         |
+| Giorno 3 | Generare una griglia di elementi da un array e animarli in cascata con `stagger`.                                              | Core API  | `useGSAP`, `Stagger`                   | Uno crea l'effetto `stagger` base, l'altro sperimenta con le opzioni avanzate (`from: "center"`, `grid`, etc.). |
+| Giorno 4 | Far apparire un elemento quando entra nella viewport usando `ScrollTrigger` e `toggleActions`.                                 | Scrolling | `ScrollTrigger`                        | Uno imposta il trigger, l'altro configura le `toggleActions` per controllare l'animazione in entrata e uscita.  |
+| Giorno 5 | "Fissare" un'intera sezione mentre si scorre, usando l'opzione `pin` di ScrollTrigger.                                         | Scrolling | `ScrollTrigger`                        | Uno implementa il `pin`, l'altro aggiunge un'animazione di testo che avviene durante il pinning.                |
+| Giorno 6 | Creare una barra di progresso che si anima seguendo lo scroll della pagina con `scrub`.                                        | Scrolling | `ScrollTrigger`                        | Uno crea la barra con `scrub: true`, l'altro ne crea una con `scrub: 1` per confrontare la fluidità.            |
+| Giorno 7 | **Mini-Progetto:** Costruire una landing page con testo in `stagger`, una sezione "pinnata" e un'immagine animata con `scrub`. | Progetto  | `Timeline`, `Stagger`, `ScrollTrigger` | Dividersi le sezioni: uno si occupa della hero section, l'altro della sezione pinnata.                          |
 
-First, run the development server:
+### **Settimana 2: Interattività e magia del testo**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+| Giorno    | 🎯 Compito del Giorno                                                                        | 💡 Focus      | 🛠️ Plugin/API           | 🤝 Idea Collaborazione                                                                                                   |
+| --------- | -------------------------------------------------------------------------------------------- | ------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Giorno 8  | Rendere un elemento trascinabile all'interno di un'area definita usando `Draggable`.         | Interattività | `Draggable`             | Uno implementa il trascinamento base, l'altro aggiunge i `bounds` e testa su mobile.                                     |
+| Giorno 9  | Aggiungere un effetto di "lancio" con inerzia all'elemento trascinabile.                     | Interattività | `Draggable`, `Inertia`  | Uno integra il plugin Inertia, l'altro gioca con i parametri di `resistance` e `duration` per trovare il feeling giusto. |
+| Giorno 10 | Animare un titolo facendolo apparire parola per parola.                                      | Testo         | `SplitText`             | Uno si occupa di dividere il testo, l'altro crea una timeline creativa per animare le singole parole.                    |
+| Giorno 11 | Creare un'animazione "a onda" su un titolo, animando ogni singolo carattere.                 | Testo         | `SplitText`             | Pair programming per perfezionare l'effetto `stagger` sui caratteri e ottenere un'onda fluida.                           |
+| Giorno 12 | Creare un effetto "macchina da scrivere" (`Text`) e un effetto "scramble" (`ScrambleText`).  | Testo         | `Text`, `ScrambleText`  | Dividersi i plugin: uno si occupa di un effetto, l'altro dell'altro, sulla stessa pagina.                                |
+| Giorno 13 | Creare un menu di navigazione che scrolla fluidamente alle sezioni della pagina.             | Interattività | `ScrollTo`              | Uno crea la struttura HTML/CSS, l'altro implementa la logica JS con gli `onClick`.                                       |
+| Giorno 14 | **Mini-Progetto:** Un header con un titolo animato (SplitText) e un menu che usa `ScrollTo`. | Progetto      | `SplitText`, `ScrollTo` | Uno si occupa dell'header e dell'animazione del titolo, l'altro delle sezioni e della logica di scrolling.               |
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **Settimana 3: Dare vita agli SVG**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Giorno    | 🎯 Compito del Giorno                                                                                                                                     | 💡 Focus      | 🛠️ Plugin/API                 | 🤝 Idea Collaborazione                                                                                                  |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Giorno 15 | Animare il "disegno" del tratto di un'icona SVG usando `DrawSVG`.                                                                                         | SVG           | `DrawSVG`                     | Trovate due icone diverse e implementate l'animazione ciascuno sulla propria, poi integratele.                          |
+| Giorno 16 | Trasformare un'icona SVG in un'altra (es. cerchio → quadrato) con `MorphSVG`.                                                                             | SVG           | `MorphSVG`                    | Uno prepara gli SVG e gli ID, l'altro scrive la funzione che attiva il morphing al click di un pulsante.                |
+| Giorno 17 | Far seguire a un oggetto un percorso SVG personalizzato con `MotionPath`.                                                                                 | SVG           | `MotionPath`                  | Uno disegna il percorso SVG (anche con un tool online), l'altro implementa l'animazione dell'oggetto.                   |
+| Giorno 18 | Collegare l'animazione su `MotionPath` allo scorrimento della pagina.                                                                                     | SVG           | `MotionPath`, `ScrollTrigger` | Partendo dal codice del giorno 17, uno aggiunge `ScrollTrigger` e l'opzione `scrub`.                                    |
+| Giorno 19 | Creare uno slider di immagini che cambia slide allo swipe dell'utente usando `Observer`.                                                                  | Interattività | `Observer`                    | Questo è complesso. Studiate la documentazione di `Observer` insieme e implementatelo con pair programming.             |
+| Giorno 20 | Creare una curva di "ease" personalizzata per un effetto di rimbalzo unico.                                                                               | Core API      | `CustomEase`                  | Create due curve diverse sul visualizzatore di GSAP e usatele per animare due oggetti, per confrontarle.                |
+| Giorno 21 | **Mini-Progetto:** Un'infografica "scrollytelling": un'icona segue un percorso (`MotionPath`) e attiva animazioni (`DrawSVG`) quando raggiunge dei punti. | Progetto      | `SVG`, `ScrollTrigger`        | Uno si occupa del percorso principale e dell'oggetto che si muove, l'altro delle animazioni secondarie che si attivano. |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Settimana 4: Strumenti pro e progetto finale**
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Giorno       | 🎯 Compito del Giorno                                                                      | 💡 Focus      | 🛠️ Plugin/API             | 🤝 Idea Collaborazione                                                                                                                                       |
+| ------------ | ------------------------------------------------------------------------------------------ | ------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Giorno 22    | Animare un elemento che cambia posizione e dimensione nel layout con `Flip`.               | React         | `Flip`                    | Uno gestisce lo stato React (es. `isExpanded`), l'altro implementa la logica `Flip` per animare la transizione.                                              |
+| Giorno 23    | Creare uno scorrimento ultra-fluido per l'intera pagina usando `ScrollSmoother`.           | Scrolling     | `ScrollSmoother`          | Uno implementa `ScrollSmoother`, l'altro aggiunge effetti parallax semplici usando `data-speed`.                                                             |
+| Giorno 24    | Usare `GSDevTools` per ispezionare e fare il debug di una timeline complessa.              | Core API      | `GSDevTools`              | Prendete l'animazione più complessa fatta finora e aggiungete i dev tools per analizzarla insieme.                                                           |
+| Giorno 25    | Applicare fisica 2D (gravità, collisioni) a degli elementi usando `Physics2D`.             | Interattività | `Physics2D`               | Uno crea il "mondo" (contenitore e gravità), l'altro aggiunge gli oggetti e testa le collisioni.                                                             |
+| Giorno 26    | Revisione codice, refactoring e creazione di componenti riutilizzabili.                    | React         | `useGSAP`                 | Rivedete insieme i componenti creati, identificate logiche ripetute e create un custom hook o un componente animato riutilizzabile.                          |
+| Giorno 27-30 | **🚀 PROGETTO FINALE:** Ricreare l'effetto "cilindro rotante" con scorrimento orizzontale. | Progetto      | `ScrollTrigger`, `CSS 3D` | **G27:** Struttura HTML/CSS. **G28:** Logica `pin` e scorrimento orizzontale. **G29:** Aggiunta trasformazioni 3D e rotazione. **G30:** Rifinitura e deploy. |
