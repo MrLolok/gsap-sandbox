@@ -1,4 +1,5 @@
 import Day1 from './components/Day1';
+import Day2 from './components/Day2';
 
 export default function Home() {
     return (
@@ -7,6 +8,7 @@ export default function Home() {
                 GSAP <span className="text-blue-600">Playground</span>
             </h1>
             <Day1 />
+            <Day2 />
         </main>
     );
 }
