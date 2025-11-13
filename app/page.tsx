@@ -3,6 +3,13 @@ import Link from 'next/link';
 export default function Home() {
     const days = [
         {
+            title: 'Day 7: ScrollSmoother',
+            description:
+                'Crea uno smooth scroll fluido con effetti di parallasse usando ScrollSmoother',
+            href: '/day7',
+            color: 'bg-green-500 hover:bg-green-600',
+        },
+        {
             title: 'Day 6: ScrollTrigger con Scrub',
             description:
                 'Applica animazioni con ScrollTrigger e scrub per sincronizzare animazioni con lo scroll',
