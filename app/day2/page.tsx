@@ -3,8 +3,9 @@
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import React from 'react';
+import Link from 'next/link';
 
-const Day2 = () => {
+export default function Day2Page() {
     const boxToRef = React.useRef<HTMLDivElement>(null);
     const boxFromRef = React.useRef<HTMLDivElement>(null);
     const boxFromToRef = React.useRef<HTMLDivElement>(null);
@@ -25,7 +26,13 @@ const Day2 = () => {
     }, []);
 
     return (
-        <>
+        <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 gap-12 sm:items-start">
+            <Link
+                href="/"
+                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+            >
+                ← Torna alla home
+            </Link>
             <div className="mb-8 text-3xl font-bold">Day 2: Timelines</div>
             <div className="flex flex-row gap-8">
                 <div
@@ -57,8 +64,6 @@ const Day2 = () => {
                     Box (gsap.set)
                 </div>
             </div>
-        </>
+        </main>
     );
-};
-
-export default Day2;
+}
