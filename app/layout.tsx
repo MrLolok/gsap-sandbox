@@ -6,8 +6,17 @@ import { useGSAP } from '@gsap/react';
 
 // Importa plugin
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import { Draggable } from 'gsap/Draggable';
+import { InertiaPlugin } from 'gsap/InertiaPlugin';
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+gsap.registerPlugin(
+    useGSAP,
+    ScrollTrigger,
+    ScrollSmoother,
+    Draggable,
+    InertiaPlugin
+);
 
 const geistSans = Geist({
     variable: '--font-geist-sans',

@@ -1,12 +1,8 @@
 'use client';
 
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import Link from 'next/link';
-
-// Registra il plugin ScrollTrigger
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Day5Page() {
     useGSAP(() => {

@@ -1,14 +1,9 @@
 'use client';
 
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
 import Link from 'next/link';
-
-// Registra i plugin
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 export default function Day7Page() {
     const smoothWrapper = useRef<HTMLDivElement>(null);

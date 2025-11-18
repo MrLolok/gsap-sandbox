@@ -3,6 +3,13 @@ import Link from 'next/link';
 export default function Home() {
     const days = [
         {
+            title: 'Day 8: Draggable e Inertia',
+            description:
+                'Crea elementi trascinabili con fisica di inerzia usando Draggable e InertiaPlugin',
+            href: '/day8',
+            color: 'bg-red-500 hover:bg-red-600',
+        },
+        {
             title: 'Day 7: ScrollSmoother',
             description:
                 'Crea uno smooth scroll fluido con effetti di parallasse usando ScrollSmoother',
