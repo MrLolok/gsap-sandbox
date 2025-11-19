@@ -8,6 +8,7 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { Draggable } from 'gsap/Draggable';
+import { SplitText } from 'gsap/SplitText';
 import { InertiaPlugin } from 'gsap/InertiaPlugin';
 
 gsap.registerPlugin(
@@ -15,6 +16,7 @@ gsap.registerPlugin(
     ScrollTrigger,
     ScrollSmoother,
     Draggable,
+    SplitText,
     InertiaPlugin
 );
 

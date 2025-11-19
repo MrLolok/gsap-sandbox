@@ -3,6 +3,13 @@ import Link from 'next/link';
 export default function Home() {
     const days = [
         {
+            title: 'Day 9: SplitText',
+            description:
+                'Esempio di animazioni con SplitText per suddividere e animare testo',
+            href: '/day9',
+            color: 'bg-pink-500 hover:bg-pink-600',
+        },
+        {
             title: 'Day 8: Draggable e Inertia',
             description:
                 'Crea elementi trascinabili con fisica di inerzia usando Draggable e InertiaPlugin',
