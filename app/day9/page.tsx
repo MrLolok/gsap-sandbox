@@ -5,7 +5,7 @@ import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { SplitText } from 'gsap/SplitText';
 
-export default function Day8Page() {
+export default function Day9Page() {
     const viewRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {

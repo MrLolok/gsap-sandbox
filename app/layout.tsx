@@ -10,6 +10,8 @@ import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { Draggable } from 'gsap/Draggable';
 import { SplitText } from 'gsap/SplitText';
 import { InertiaPlugin } from 'gsap/InertiaPlugin';
+import { TextPlugin } from 'gsap/TextPlugin';
+import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin';
 
 gsap.registerPlugin(
     useGSAP,
@@ -17,7 +19,9 @@ gsap.registerPlugin(
     ScrollSmoother,
     Draggable,
     SplitText,
-    InertiaPlugin
+    InertiaPlugin,
+    TextPlugin,
+    ScrambleTextPlugin
 );
 
 const geistSans = Geist({

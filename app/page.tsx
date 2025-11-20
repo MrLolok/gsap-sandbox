@@ -3,6 +3,13 @@ import Link from 'next/link';
 export default function Home() {
     const days = [
         {
+            title: 'Day 10: Text and ScrambleText',
+            description:
+                'Esempi di animazioni con Text e ScrambleText per animare e trasformare testo',
+            href: '/day10',
+            color: 'bg-yellow-500 hover:bg-yellow-600',
+        },
+        {
             title: 'Day 9: SplitText',
             description:
                 'Esempio di animazioni con SplitText per suddividere e animare testo',
