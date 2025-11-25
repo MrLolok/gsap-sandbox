@@ -7,7 +7,7 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 gsap.registerPlugin(ScrollToPlugin);
 
-export default function Day10Page() {
+export default function Day11Page() {
     const viewRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {

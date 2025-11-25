@@ -3,11 +3,18 @@ import Link from 'next/link';
 export default function Home() {
     const days = [
         {
+            title: 'Day 12: DrawSVG',
+            description:
+                'Esempi di animazioni con DrawSVG per disegnare e animare tracciati SVG',
+            href: '/day12',
+            color: 'bg-lime-500 hover:bg-lime-600',
+        },
+        {
             title: 'Day 11: ScrollTo',
             description:
                 'Esempi di animazioni con ScrollTo per scrollare a sezioni specifiche della pagina',
             href: '/day11',
-            color: 'bg-yellow-500 hover:bg-yellow-600',
+            color: 'bg-blue-500 hover:bg-blue-600',
         },
         {
             title: 'Day 10: Text and ScrambleText',
