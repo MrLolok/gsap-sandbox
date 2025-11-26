@@ -3,6 +3,13 @@ import Link from 'next/link';
 export default function Home() {
     const days = [
         {
+            title: 'Day 13: MorphSVG',
+            description:
+                'Esempi di animazioni con MorphSVG per trasformare e animare forme SVG',
+            href: '/day13',
+            color: 'bg-red-500 hover:bg-red-600',
+        },
+        {
             title: 'Day 12: DrawSVG',
             description:
                 'Esempi di animazioni con DrawSVG per disegnare e animare tracciati SVG',
